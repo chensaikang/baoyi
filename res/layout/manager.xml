@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:orientation="vertical" >
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backcolor"
+        android:gravity="center_vertical"
+        >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="22sp"
+       android:textColor="@color/White"
+        android:text="@string/Acredit"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search" />
+    </RelativeLayout>
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/backcolor"
+            android:text="品名"/>
+         
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/backcolor"
+            android:text="材料"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/backcolor"
+            android:text="重量(吨)"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/backcolor"
+            android:text="单价"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent" 
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/backcolor"
+        /> 
+     <android.support.v4.widget.SwipeRefreshLayout 
+		    android:id="@+id/swipeRefreshLayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+   <ExpandableListView
+        android:id="@+id/ep_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:footerDividersEnabled="true" 
+        android:divider="@color/divide"    
+        android:dividerHeight="1dp"
+        />
+</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
+ <TextView
+      android:id="@+id/empty"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="努力加载中。。。"
+     android:textSize="16sp"
+     android:gravity="center_horizontal"
+     android:layout_centerInParent="true"/>
+
+</RelativeLayout>

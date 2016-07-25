@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backcolor"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/White"
+        />
+   <RelativeLayout 
+       android:id="@+id/rlayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:paddingTop="30dp"
+        android:background="#FFF2EA"
+       >
+       <ImageView
+        android:id="@+id/iv_log"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login3" />
+       
+        <TextView 
+        android:id="@+id/rem_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/iv_log"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/txtcolor"
+        android:hint="未登录"/>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+              android:layout_below="@+id/rem_num"/>
+      </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlayout"
+            android:paddingTop="20dp"
+            android:background="#FFFFFF"
+            android:columnWidth="100dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            
+            android:verticalSpacing="10dp" >
+</GridView>    
+               
+               
+      
+ 
+    
+
+</RelativeLayout>

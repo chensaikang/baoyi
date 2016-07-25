@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backcolor">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的场次"
+            android:textSize="22sp"
+            android:textColor="@color/White"
+            android:layout_centerInParent="true"
+            />
+      <LinearLayout 
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        >
+    <ImageView 
+        android:id="@+id/iv_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arrow2"
+        android:scaleType="fitXY"
+        />
+    </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/White"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/backcolor"
+            android:text="场次信息"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/backcolor"
+            android:text="状态"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/backcolor"
+            android:text="日期"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backcolor"
+        />
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:paddingBottom="40dp"
+         android:paddingTop="10dp"
+         android:background="@color/White"
+        >
+     <android.support.v4.widget.SwipeRefreshLayout 
+		    android:id="@+id/swipeRefreshLayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_below="@+id/title_tv"
+		    android:orientation="vertical" >
+			   <ListView 
+			        android:id="@+id/session_lv"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginTop="5dp"
+			         android:divider="@color/divide"    
+                     android:dividerHeight="1dp" >
+			    </ListView>
+			</android.support.v4.widget.SwipeRefreshLayout>
+      <TextView
+          android:id="@+id/empty"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:gravity="center_vertical|center_horizontal"
+          android:text="加载中。。。" />
+
+  </RelativeLayout>
+    
+
+</LinearLayout>

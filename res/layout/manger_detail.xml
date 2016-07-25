@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/White"
+    android:paddingBottom="20dp">
+
+      <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView 
+        android:id="@+id/car_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:background="@color/backcolor"
+        android:text="公告详情"/>
+    <LinearLayout 
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        >
+    <ImageView 
+        android:id="@+id/iv_onback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arrow2"
+        android:scaleType="fitXY"
+        />
+    </LinearLayout>
+     </RelativeLayout>
+     
+    <WebView 
+        android:id="@+id/detail_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

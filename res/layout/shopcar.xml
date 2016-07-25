@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView 
+        android:id="@+id/car_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:background="@color/backcolor"
+        android:text="我 的 购 物 车"/>
+    <LinearLayout 
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        >
+    <ImageView 
+        android:id="@+id/iv_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arrow2"
+        android:scaleType="fitXY"
+        
+        />
+    </LinearLayout>
+     </RelativeLayout>
+     
+     <LinearLayout 
+        android:id="@+id/ll_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:id="@+id/tv_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="购物车里什么也木有"
+            android:textColor="@color/gray"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/toshop"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_"
+            android:textColor="@color/White"
+            android:layout_gravity="center_horizontal"
+            android:text="立即购买"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/fastbuy"
+             />
+    </LinearLayout>
+    
+    <!-- 购物车有内容的视图 -->
+    <LinearLayout 
+        android:id="@+id/ll_yes"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <CheckBox 
+            android:id="@+id/all_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/box_3x"
+            android:drawablePadding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/txtcolor"
+            android:text="全选"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                  android:textSize="20sp"
+                  android:textColor="@color/txtcolor"
+                android:text="品名"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:textSize="20sp"
+                android:textColor="@color/txtcolor"
+                android:text="单价"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                android:layout_weight="2"
+                android:textColor="@color/txtcolor"
+                android:text="重量"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:textSize="20sp"
+                android:textColor="@color/txtcolor"
+                android:text="总价"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="20sp"
+                android:textColor="@color/txtcolor"
+                android:gravity="center_horizontal"
+                android:text="操作"/>
+        </LinearLayout>
+    </LinearLayout>
+        <ListView 
+            android:id="@+id/car_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/divide"    
+            android:dividerHeight="1dp"
+            ></ListView>
+   
+    
+</LinearLayout>

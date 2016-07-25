@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal" 
+    android:padding="5dp"
+    android:background="@color/White">
+    
+    <CheckBox 
+        android:id="@+id/cb_pinming"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:button="@drawable/box_3x"
+        android:drawablePadding="5dp"
+        android:text="补休热轧中厚板"
+        android:maxLines="2"
+        android:textSize="15sp"
+        android:focusable="false"
+        android:textColor="@color/backcolor"
+         />
+    
+    <TextView 
+        android:id="@+id/order_danjia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+         android:textSize="15sp"
+         android:textColor="@color/txtcolor"
+         android:layout_marginTop="10dp"
+         android:gravity="center_horizontal"
+        android:text="# 14235.00"
+        />
+    <TextView 
+        android:id="@+id/order_zhongliang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="  235.0 "
+        android:textColor="@color/txtcolor"
+         android:textSize="15sp"
+         android:gravity="center_horizontal"
+         android:layout_marginTop="10dp"
+        />
+    <TextView 
+        android:id="@+id/order_zongjia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+         android:textSize="15sp"
+         android:textColor="@color/txtcolor"
+        android:text="# 14235.00"
+         android:layout_marginTop="10dp"
+        />
+    <TextView 
+        android:id="@+id/order_zaozuo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:textSize="15sp"
+        android:layout_weight="2"
+        android:focusable="false"
+        android:text="  删除 "
+        android:textColor="@color/blue"
+         android:layout_marginTop="10dp"
+        />
+</LinearLayout>

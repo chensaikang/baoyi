@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:padding="5dp">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <TextView 
+        android:id="@+id/order_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/backcolor"
+        android:text="订单号"/>
+    <TextView 
+        android:id="@+id/order_weight"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textColor="@color/txtcolor"
+        android:text="重量"/>
+    <TextView 
+        android:id="@+id/order_state"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+       android:textColor="@color/txtcolor"
+        android:layout_weight="2"
+        android:text="订单状态"/>
+</LinearLayout>
+    
+</LinearLayout>

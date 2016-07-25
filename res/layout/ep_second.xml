@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ededed">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_cankaohoudu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="参考厚度："
+            android:layout_weight="1"
+            android:textColor="@color/txtcolor"
+            android:textSize="15sp"
+          />
+         
+        <TextView
+            android:id="@+id/tv_jizhongfagnshi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/txtcolor"
+            android:text="计重方式："
+            android:textSize="15sp"
+          />
+    </LinearLayout>
+          
+        <TextView
+            android:id="@+id/tv_kunbanghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="捆 绑 号："
+            android:textSize="15sp"
+            android:textColor="@color/txtcolor"
+            android:padding="5dp"
+          />
+         
+      <TextView
+            android:id="@+id/tv_wuliaohao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物 料 号："
+            android:textSize="15sp"
+             android:padding="5dp"
+             android:textColor="@color/txtcolor"
+          />
+        <TextView
+            android:id="@+id/tv_zhixingbiaozhun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="执行标准："
+           android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/txtcolor"
+          />
+          
+        <TextView
+            android:id="@+id/tv_guige"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="规   格："
+            android:textColor="@color/txtcolor"
+            android:textSize="15sp"
+          />
+    <TextView 
+        android:id="@+id/tv_bian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:textSize="15sp"
+        android:textColor="@color/txtcolor"
+        android:text="边部/切边:"/>
+<LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="5dp"
+       android:orientation="horizontal"
+        >
+       <TextView 
+           android:id="@+id/maijia"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:textSize="15sp"
+           android:textColor="@color/txtcolor"
+           android:layout_marginLeft="7dp"
+           android:text="仓   库："
+           />
+       <TextView
+           android:id="@+id/tv_stg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="7dp"
+           android:layout_marginTop="5dp"
+           android:textSize="15sp"
+           android:textColor="@color/txtcolor"
+           android:hint="请输入"/>
+   </LinearLayout>
+     <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="5dp"
+       android:textColor="@color/txtcolor"
+       android:orientation="horizontal"
+        >
+       <TextView 
+           android:id="@+id/tv_maijia"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="7dp"
+           android:textColor="@color/txtcolor"
+           android:text="卖   家："
+           />
+       <TextView
+           android:id="@+id/tv_et_sell"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="7dp"
+           android:layout_marginTop="5dp"
+           android:textColor="@color/txtcolor"
+           android:textSize="15sp"
+           android:hint="请输入"/>
+   </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="5dp">
+
+       <TextView 
+           android:id="@+id/tv_"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:layout_marginLeft="3dp"
+           android:textColor="@color/txtcolor"
+           android:text="备   注："
+           />
+       <TextView 
+           android:id="@+id/tv_mark"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/tv_"
+           android:text="请输入"
+           android:layout_marginLeft="5dp"
+           android:textColor="@color/txtcolor"
+           android:textSize="15sp"/>
+       <Button
+           android:id="@+id/add"
+           android:layout_width="90dp"
+           android:layout_height="40dp"
+           android:textSize="15sp"
+           android:focusable="false"
+           android:background="@drawable/btn_set"
+           android:layout_marginRight="20dp"
+           android:textColor="@color/White"
+           android:layout_below="@+id/tv_mark"
+           android:layout_alignParentRight="true"
+           android:text="加入购物车"/>
+       
+   </RelativeLayout>
+</LinearLayout>

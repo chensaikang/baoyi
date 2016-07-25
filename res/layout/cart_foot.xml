@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   android:background="@color/White"
+    >
+    <LinearLayout 
+        android:id="@+id/ll_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+    <CheckBox 
+        android:id="@+id/delete_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:button="@drawable/box_3x"
+        android:drawablePadding="3dp"
+        android:text="全选"
+       />
+    <TextView 
+        android:id="@+id/determine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="删除选中的商品"
+        />
+      
+    <TextView 
+        android:id="@+id/totalNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="18sp"
+        android:text="0件商品总金额："
+        />
+    <TextView 
+        android:id="@+id/totalMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="¥0.00"
+        />
+</LinearLayout>
+<Button 
+    android:id="@+id/pay"
+    android:layout_below="@+id/ll_final"
+    android:layout_width="85dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="50dp"
+    android:text="下订单"
+    android:textSize="18sp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/White"
+    android:background="@drawable/fastbuy"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    />
+</RelativeLayout>

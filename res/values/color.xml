@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="unclicked">#FEA776</color>
+    <color name="clicked">#F56C0B</color>
+    <color name="backcolor">#FE7C31</color>
+     <color name="huise">#7b747c</color>
+      <color name="litlegray">#c0c0c0</color>
+      <color name="calendar">#FFFFFF</color>
+      <color name="gray">#CDCDCD</color>
+      <color name="blue">#0A72BB</color>
+      <color name="focused">#F56C0B</color>
+       <color name="transparent">#00000000</color>
+       <color name="radiogroup">#f2f2f2</color>
+       <color name="divide">#b8b8b8</color>
+       <color name="txtcolor">#636363</color>
+       
+       
+       
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/White"
+    android:padding="5dp">
+    
+  
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:textSize="15sp"
+         android:layout_weight="2"
+         android:textColor="@color/txtcolor"
+        android:gravity="center_vertical"
+        android:text="测试中(我的错)厚板"/>
+    
+    <TextView 
+        android:id="@+id/material"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:layout_weight="1.2"
+        android:textSize="15sp"
+        android:textColor="@color/txtcolor"
+        android:text="Q235A "/>
+    <TextView 
+        android:id="@+id/weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:layout_weight="1"
+         android:textColor="@color/txtcolor"
+        android:textSize="15sp"
+        android:text="90.45 "/>
+
+    <TextView 
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textColor="@color/txtcolor"
+        android:text="#900123.0"/>
+    </LinearLayout>
+    
+</LinearLayout>

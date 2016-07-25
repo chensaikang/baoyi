@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak" severity="ignore">
+        <ignore path="src/com/by/updata/DownloadService.java" />
+    </issue>
+    <issue id="InflateParams" severity="ignore">
+        <ignore path="src/com/by/adapter/AuctionAdapter.java" />
+        <ignore path="src/com/by/fragment/Manager.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/by/detail/ManagerDetail.java" />
+        <ignore path="src/com/by/detail/OrderDetail.java" />
+        <ignore path="src/com/by/fragment/Buyer.java" />
+        <ignore path="src/com/by/fragment/Home.java" />
+        <ignore path="src/com/by/fragment/Manager.java" />
+        <ignore path="src/com/by/fragment/Setting.java" />
+        <ignore path="src/com/by/home/fragment/NewsFragment.java" />
+    </issue>
+    <issue id="ResourceAsColor" severity="ignore">
+        <ignore path="src/com/by/activity/LoginActivity.java" />
+    </issue>
+    <issue id="ShowToast" severity="ignore">
+        <ignore path="src/com/by/adapter/BidingAdpter.java" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+</lint>

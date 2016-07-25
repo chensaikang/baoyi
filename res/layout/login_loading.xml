@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_margin="20dp"
+    android:layout_gravity="center_horizontal|center_vertical"
+     android:background="@drawable/dialog">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_margin="10dp"
+        >
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" 
+        android:layout_marginTop="20dp"/>
+
+ <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue" 
+        android:layout_marginTop="25dp"
+	    android:textSize="18sp"
+	    android:gravity="center"
+        android:text="正在登录ing。。。"
+        android:paddingBottom="30dp"/>
+ </LinearLayout>
+</LinearLayout>

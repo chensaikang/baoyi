@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/backcolor">    
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:text="@string/Home"/>
+        <ImageView 
+            android:id="@+id/home_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="onLogin"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/picture_top"
+            />
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/vp_layout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+         <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+              <ImageView 
+                  android:id="@+id/empty"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:background="@drawable/loading"
+                  />
+
+        </RelativeLayout> 
+<LinearLayout
+    android:id="@+id/home_group"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/backcolor"
+    android:orientation="horizontal"
+    android:padding="5dp"
+     >
+    <TextView 
+        android:id="@+id/sell_bar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="@string/SellBar"
+        android:textSize="18sp"
+        android:textColor="@color/home_btn_color"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/kuang"
+        />
+   
+    <TextView 
+        android:id="@+id/bid_bar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:onClick="onClick"
+        android:text="@string/BidBar"
+        android:textColor="@color/home_btn_color"
+        android:gravity="center"
+        />
+     
+    <TextView 
+        android:id="@+id/in_bar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:onClick="onClick"
+        android:text="@string/InnerBar"
+        android:gravity="center"
+        android:textColor="@color/home_btn_color"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>
+
+<LinearLayout 
+    android:id="@+id/home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    android:paddingBottom="40dp"
+    ></LinearLayout>
+</LinearLayout>
